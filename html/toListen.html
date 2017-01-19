@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link href="/bootstrap.min.css" rel="stylesheet"> 
+
+
+    </head>
+    <body>
+        <header class="jumbotron">
+
+            <div class="well text-center">
+                <h1 class="text-center">ToListenNodeJs</h1>
+                <a href="/home"><img src="/vfly.png" class="img-rounded" alt="VFly" width="152" height="118"></a>
+            </div>
+        </header>
+        <div class="container">
+
+
+            <div class="col-md-6">
+
+                <form action="/sendForm" method="POST" class="well">
+                    <fieldset>
+                        <legend>Add a link sent by a friend</legend>
+                        <div class="form-group">
+                            <label for="title">Title</label>  
+                            <input class="form-control" id="title" name="title">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="url">YouTube link</label>  
+                            <input class="form-control" id="url" name="url">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="genre">Genre</label>  
+                            <input  class="form-control" id="genre" name="genre">
+                        </div>
+                        <div class="form-group">
+                            <label for="sender">Sent by</label>  
+                            <input  class="form-control" id="sender" name="sender">
+                        </div>
+                        <div class="form-group">
+                            <label for="author">Author(s)</label>  
+                            <input  class="form-control" id="author" name="author">
+                        </div>
+                        <button class="btn btn-success" type="submit">Send it !</button>
+                        <button class="btn btn-danger" type="reset">Reset fields</button>
+                    </fieldset>
+                </form>
+
+            </div>      
+            <div class="col-md-6 well text-center">
+
+                <ul  id="listenlist">
+
+
+
+
+
+                </ul>
+
+
+            </div>
+
+        </div>
+
+
+
+
+        <script type="text/javascript" src="/ajax.js" ></script> 
+    </body>
+
+
+
+</html>
+
